@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    transition: background-color 0.5s, color 0.5s;
+    
+}
+
+
+
+.navbar{ 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items:center;
+    height: 120px;
+    width: 100%;
+    background-color: wheat;
+    position: fixed;
+    z-index: 1000;
+}
+
+.main-logotype img{ 
+    height: 90px;
+    width: 90px;
+}
+
+
+
+#stars i{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    
+   
+}
+
+.dropdown{
+    margin-left: 20px;
+}
+
+
+
+#mainTitle{ 
+    background:url(../images/imagen\ resort\ inicio.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    color: white;
+    text-align: center;
+    position: relative;
+    
+    
+   
+  
+}
+
+#mainTitle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px);
+    z-index: 0;
+
+}
+
+#mainImage img{
+    border: 4px solid wheat;
+    height: 300px;
+    width: 600px;
+    position: relative;
+}
+
+#mainTitle h1{ 
+    font-size: 80px;
+    margin-top: 300px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+   
+    
+
+}
+
+
+
+#services{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    
+
+}
+
+.descriptions{ 
+    text-align: center;
+    padding: 10px;
+    color: black;
+    
+
+}
+.descriptions h2{ 
+    font-size: 40px;
+}
+
+.descriptions p{ 
+    font-size: 20px;
+    width: 660px;
+}
+
+.img-service img{ 
+    height: 300px;
+    width: 600px;
+   
+}
+
+.img-service{ 
+    border: 8px solid black;
+}
+
+.footer{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    height: 300px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.footer h3{ 
+    margin-top: 20px;
+}
+.footer ul{ 
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+    color: black;
+
+}
+
+.footer ul li{
+    list-style-type: none;
+    padding: 20px;
+    font-size: 20px;
+   
+    
+    
+}
+
+.footer ul li a{ 
+    color: black;
+}
+
+.footer ul :hover{
+    
+    color: white;
+    transition: 0.5s;
+    
+}
+
+.container-networks a{ 
+    color: black;
+    font-size: 35px;
+}
+
+#contactMain{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    text-align: center;
+}
+
+#contactTitle{
+    font-size: 40px;
+    color: black;
+    
+}
+
+#contactForm{ 
+    background-color: wheat;
+    height: 450px;
+    width: 500px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+#contactForm input{ 
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#workMain{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
+
+
+
+#workForm{ 
+    background-color: wheat;
+    height: 550px;
+    width: 500px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#workForm input{ 
+    width: 360px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.btn-turn-mode{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-turn-mode :hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    
+}
+
+#btnBlack{ 
+   font-size: 12px;
+    height: 25px;
+    width: 130px;
+}
+
+
+
+.dark-mode{ 
+
+    background-color: black;
+    
+    .navbar{ 
+        background-color: white;
+        color: black;
+
+    }
+
+    
+    #stars i{ 
+        color: black;
+    }
+    #mainTitle h1{ 
+        color: black;
+    }
+    .descriptions{ 
+        color: white;
+    }
+
+    .img-service{ 
+        border: 4px solid white;
+    }
+   
+   
+    .footer{ 
+        background-color: white;
+        color: black;
+    }
+
+    #contactTitle{
+        color: white;
+    }
+
+    #contactForm{ 
+        
+        border: 4px solid white;
+        
+        
+    }
+
+    #workForm{ 
+
+        border: 4px solid white;
+       
+    }
+
+    #workWithUsTitle{
+        color: white;
+    }
+    
+}
+
+.light-mode{ 
+    
+    color: black;
+}
+
+
